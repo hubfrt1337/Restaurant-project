@@ -1,0 +1,19 @@
+nav{
+    margin: auto;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav>button{
+    height: 3rem;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    border-radius: 5px;
+    border: 5px solid;
+    cursor: pointer;
+}
+nav>button:hover{
+    background: linear-gradient(110deg, #eab108 60%, #f1db10 60%);
+}
