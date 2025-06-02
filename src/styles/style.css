@@ -6,7 +6,7 @@
 body{
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 }
-#content{
+.content{
     display: grid;
     width: 80vw;
     height: 1000px;
@@ -15,14 +15,12 @@ body{
 }
 
 .headline{
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 300px;
-    background-color: red;
     border-radius: 20px;
 }
 .left-head{
-    width: 50%;
     background: linear-gradient(to bottom right, #55566a, #282834); 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -41,7 +39,6 @@ body{
     font-weight: bold;
 }
 .right-head{
-    width: 50%;
     background: url(../images/pizza-headline.jpg);
     background-size: cover;
     background-repeat: no-repeat;
