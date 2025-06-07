@@ -15,9 +15,11 @@ body{
 
 .headline{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 400px;
     height: 300px;
     border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .left-head{
@@ -39,7 +41,7 @@ body{
     font-weight: bold;
 }
 .right-head{
-    background: url(../images/pizza4.jpg);
+    background: url(../images/pizza7.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-top-right-radius: 20px;
@@ -60,7 +62,6 @@ body{
 .info-container{
     margin-top: 30px;
     width: auto;
-    height: 300px;
     display: flex;
     justify-content: space-around;
 }
@@ -70,6 +71,7 @@ body{
     background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
     border: 3px solid rgb(141, 84, 0);
     padding: 10px;
+    height: 300px;
 }
 .flex-rows{
     display: flex;
@@ -93,3 +95,26 @@ body{
     font-weight: bold;
 }
 
+@media screen and (max-width: 800px){
+    .info-container{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+   
+}
+
+@media screen and (max-width: 400px){
+    #open-times,
+    #location{
+        width: 250px;
+        height: 250px;
+    }
+    .flex-rows,
+    .flex-rows2{
+        font-size: 0.8rem;
+    }
+    .text{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,10 @@
+section{
+    margin-bottom: 4rem;
+    color: rgba(255, 255, 255, 0.674);
+}
+
+@media screen and (max-width: 800px) {
+    section{
+        font-size: 1.5rem;
+    }
+}

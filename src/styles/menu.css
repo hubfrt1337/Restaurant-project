@@ -24,10 +24,15 @@
 }
 
 .pizza-imgJs{
-    background: url(../images/pizza1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: block;
+}
+.imgPizza{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 .pizza-info{
     padding: 0.5rem;
@@ -49,6 +54,9 @@
     margin-top: auto;
 }
 @media screen and (max-width: 900px){
+    .headline{
+        grid-template-columns: 1fr 1fr;
+    }
     .content{
         width: 95vw;
         margin-left: auto;
@@ -88,10 +96,24 @@
         height: 300;
     }
     .left-head{
+        font-size: 2.5rem;
+    }
+    .left-head>p{
         font-size: 2rem;
     }
 }
-
+@media screen and (max-width: 600px){
+    .headline{
+        height: 250px;
+        font-size: 1.5rem;
+    }
+    .left-head{
+        font-size: 1.5rem;
+    }
+    .left-head>p{
+        font-size: 1.5rem;
+    }
+}
 @media screen and (max-width: 500px){
     .pizza-nameJs{
         font-size: 0.8rem;
@@ -101,5 +123,19 @@
     }
     .priceJs{
         font-size: 0.8rem;
+    }
+    .headline{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 400px){
+    .headline{
+        height: 150px;
+    }
+    .left-head{
+        font-size: 1.5rem;
+    }
+    .left-head>p{
+        font-size: 1.2rem;
     }
 }
